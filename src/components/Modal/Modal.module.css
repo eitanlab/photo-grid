@@ -1,0 +1,65 @@
+.Modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.ModalBody {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Img {
+    width: 100%;
+}
+
+.Overlay {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+.CloseButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 100px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.ShareButton {
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+    border-radius: 30px;
+    width: 100px;
+    box-shadow: 0 5px 5px 0 #666;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 10px 30px;
+}
+
+.ShareButton:hover {
+    box-shadow: 0 5px 10px 0 #666;
+   transform: scale(1.05);
+}
